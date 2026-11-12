@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>nhadzy resto - Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <a href="home.html" class="logo">
+
+        <span>Nhadzy</span> Resto
+
+        <small>
+            Ramen Made With Passion
+        </small>
+
+    </a>
+
+
+    <nav>
+
+        <a href="home.html">
+            HOME
+        </a>
+
+        <a href="home.html#menu">
+            MENU
+        </a>
+
+        <a href="cart.html">
+            CART
+        </a>
+
+        <a href="checkout.html" class="active">
+            CHECKOUT
+        </a>
+
+        <a href="home.html#about">
+            ABOUT US
+        </a>
+
+    </nav>
+
+
+    <div class="header-right">
+
+        <div class="search">
+
+            <input
+                type="text"
+                placeholder="Search ramen..."
+            >
+
+            <span>⌕</span>
+
+        </div>
+
+        <a href="cart.html" class="cart-button">
+            🛒
+            <span id="cartCount">
+                0
+            </span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- CHECKOUT -->
+
+<main class="checkout-page">
+
+
+    <!-- DELIVERY INFORMATION -->
+
+    <section class="delivery-box">
+
+        <h2>
+            DELIVERY INFORMATION
+        </h2>
+
+
+        <form id="checkoutForm">
+
+            <label>
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label>
+                Address
+            </label>
+
+            <input
+                type="text"
+                id="customerAddress"
+                placeholder="Enter your complete address"
+                required
+            >
+
+
+            <label>
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+
+            <h3>
+                PAYMENT METHOD
+            </h3>
+
+
+            <div class="payment">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Cash on Delivery"
+                        checked
+                    >
+                    Cash on Delivery
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="GCash"
+                    >
+                    GCash
+                </label>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="red-btn place-order"
+            >
+                PLACE ORDER
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ORDER SUMMARY -->
+
+    <section class="summary-box">
+
+        <h2>
+            ORDER SUMMARY
+        </h2>
+
+
+        <div id="checkoutItems">
+        </div>
+
+
+        <div class="summary-line">
+
+            <span>
+                Subtotal
+            </span>
+
+            <strong id="checkoutSubtotal">
+                ₱0
+            </strong>
+
+        </div>
+
+
+        <div class="summary-line">
+
+            <span>
+                Delivery Fee
+            </span>
+
+            <strong>
+                ₱40
+            </strong>
+
+        </div>
+
+
+        <div class="summary-total">
+
+            <span>
+                TOTAL
+            </span>
+
+            <strong id="checkoutTotal">
+                ₱40
+            </strong>
+
+        </div>
+
+
+        <div class="thank-you">
+
+            <div class="bowl">
+                ♨
+            </div>
+
+            <h2>
+                THANK YOU!
+            </h2>
+
+            <p>
+                We appreciate your order.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <h2>
+        Nhadzy Resto
+    </h2>
+
+    <p>
+        Ramen Made With Passion
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

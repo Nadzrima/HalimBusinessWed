@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <style>
+            h1 {
+                animation: color 10s infinite;
+            }
+
+            @keyframes color {
+                25%{color: purple;}
+                50%{color: red;}
+                75%{color: blue;}
+                100%{color: green;}
+            }
+        </style>
+    </head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Nhadzy Resto - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <a href="home.html" class="logo">
+
+        <span>Nhadzy</span> Resto
+
+        <small>
+            Ramen Made With Passion
+        </small>
+
+    </a>
+
+
+    <nav>
+
+        <a href="home.html" class="active">
+            HOME
+        </a>
+
+        <a href="home.html#menu">
+            MENU
+        </a>
+
+        <a href="cart.html">
+            CART
+        </a>
+
+        <a href="checkout.html">
+            CHECKOUT
+        </a>
+
+        <a href="#about">
+            ABOUT US
+        </a>
+
+    </nav>
+
+
+    <div class="header-right">
+
+        <div class="search">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search ramen..."
+            >
+
+            <span>⌕</span>
+
+        </div>
+
+
+        <a href="cart.html" class="cart-button">
+
+            🛒
+
+            <span id="cartCount">
+                0
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p>WELCOME TO</p>
+
+        <h1>
+            Nhadzy Resto
+        </h1>
+
+        <h3>
+            RAMEN MADE WITH PASSION
+        </h3>
+
+        <a
+            href="#menu"
+            class="red-btn hero-btn"
+        >
+            ORDER NOW
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section" id="menu">
+
+    <div class="section-title">
+
+        <div>
+
+            <h2>
+                OUR RAMEN MENU
+            </h2>
+
+            <span></span>
+
+        </div>
+
+        <a href="#menu">
+            View All
+        </a>
+
+    </div>
+
+
+    <div class="products" id="products">
+
+
+        <!-- RAMEN 1 -->
+
+        <div class="product">
+
+            <img
+                src="classic_shoyu_ramen.png"
+                alt="Classic Shoyu Ramen"
+            >
+
+            <div class="product-info">
+
+                <div class="product-name">
+
+                    <h3>
+                        Classic Shoyu Ramen
+                    </h3>
+
+                    <strong>
+                        ₱220
+                    </strong>
+
+                </div>
+
+                <button
+                    class="red-btn add-btn"
+                    onclick="addToCart('Classic Shoyu Ramen', 220, 'images/classic_shoyu_ramen.png')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RAMEN 2 -->
+
+        <div class="product">
+
+            <img
+                src="spicy_miso_ramen.png"
+                alt="Spicy Miso Ramen"
+            >
+
+            <div class="product-info">
+
+                <div class="product-name">
+
+                    <h3>
+                        Spicy Miso Ramen
+                    </h3>
+
+                    <strong>
+                        ₱250
+                    </strong>
+
+                </div>
+
+                <button
+                    class="red-btn add-btn"
+                    onclick="addToCart('Spicy Miso Ramen', 250, images/'spicy_miso_ramen.png')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RAMEN 3 -->
+
+        <div class="product">
+
+            <img
+                src="creamy_tonkotsu_ramen.png"
+                alt="Creamy Tonkotsu Ramen"
+            >
+
+            <div class="product-info">
+
+                <div class="product-name">
+
+                    <h3>
+                        Creamy Tonkotsu Ramen
+                    </h3>
+
+                    <strong>
+                        ₱280
+                    </strong>
+
+                </div>
+
+                <button
+                    class="red-btn add-btn"
+                    onclick="addToCart('Creamy Tonkotsu Ramen', 280, 'images/creamy_tonkotsu_ramen.png')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RAMEN 4 -->
+
+        <div class="product">
+
+            <img
+                src="chicken_shio_ramen.png"
+                alt="Chicken Shio Ramen"
+            >
+
+            <div class="product-info">
+
+                <div class="product-name">
+
+                    <h3>
+                        Chicken Shio Ramen
+                    </h3>
+
+                    <strong>
+                        ₱230
+                    </strong>
+
+                </div>
+
+                <button
+                    class="red-btn add-btn"
+                    onclick="addToCart('Chicken Shio Ramen', 230, 'images/chicken_shio_ramen.png')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews-section">
+
+    <div class="section-title">
+
+        <div>
+
+            <h2>
+                WHAT OUR CUSTOMER SAYS
+            </h2>
+
+            <span></span>
+
+        </div>
+
+        <a href="#comments">
+            Leave a Comment
+        </a>
+
+    </div>
+
+
+    <div class="reviews">
+
+        <div class="review">
+
+            <div class="avatar">
+                J
+            </div>
+
+            <div>
+
+                <strong>
+                    John D.
+                </strong>
+
+                <span class="stars">
+                    ★★★★★
+                </span>
+
+                <p>
+                    The best ramen I've ever had!
+                    Super flavorful and fresh!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="avatar">
+                M
+            </div>
+
+            <div>
+
+                <strong>
+                    Mika S.
+                </strong>
+
+                <span class="stars">
+                    ★★★★★
+                </span>
+
+                <p>
+                    I love the Spicy Miso Ramen.
+                    Will definitely order again!
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMMENT FORM -->
+
+    <div
+        class="comment-area"
+        id="comments"
+    >
+
+        <h3>
+            Leave a Comment
+        </h3>
+
+        <form id="commentForm">
+
+            <input
+                type="text"
+                id="commentName"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                type="text"
+                id="commentText"
+                placeholder="Write your comment..."
+                required
+            >
+
+            <button
+                class="red-btn"
+                type="submit"
+            >
+                Post
+            </button>
+
+        </form>
+
+
+        <div id="commentList"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    class="about-section"
+    id="about"
+
+
+    <h2>
+        ABOUT NHADZY RESTO
+    </h2>
+
+    <p>
+        At nhadzy resto, we serve delicious ramen
+        made with passion, fresh ingredients, and
+        comforting flavors.
+    </p>
+
+    <video controls class="about-video">
+        <source src="video/my_video.mp4"
+    type="video/mp4">
+            Your browser does not support the video.
+    </video>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>
+        Nhadzy Resto
+    </h2>
+
+    <p>
+        Ramen Made With Passion
+    </p>
+
+    <p>
+        © 2026 Nhadzy Resto. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

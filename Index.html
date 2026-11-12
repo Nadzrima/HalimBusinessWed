@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhadzy Resto - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <!-- LAMP ANIMATION -->
+     <div class="lamp">
+        <div class="lamp-cord"></div>
+
+        <div class="lamp-shade">
+            <div class="bulb"></div>
+        </div>
+
+        <div class="lamp-glow"></div>
+
+     </div>
+
+     <style>
+        h1{
+            animation: color 10s infinite;
+        }
+
+        @keyframes color{
+            25%{color: purple;}
+            50%{color: yellow;}
+            75%{color: blue;}
+            100%{color: green;}
+        }
+     </style>
+
+    <div class="login-container">
+
+        <!-- LEFT SIDE -->
+        <div class="login-brand">
+
+            <div class="brand-logo">
+                <span>Nhadzy</span> Resto
+            </div>
+
+            <p>Ramen Made With Passion</p>
+
+        </div>
+
+
+        <!-- LOGIN BOX -->
+        <div class="login-box">
+
+            <h1>Welcome Back!</h1>
+
+            <p class="login-text">
+                Login to continue
+            </p>
+
+            <form id="loginForm">
+
+                <label for="surname">Surname</label>
+
+                <input
+                    type="text"
+                    id="surname"
+                    placeholder="Enter your surname"
+                    required
+                >
+
+
+                <label for="password">Password</label>
+
+                <div class="password-container">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="showPassword"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="red-btn login-btn"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <div class="or">
+                <span>or</span>
+            </div>
+
+
+            <button
+                class="guest-btn"
+                id="guestBtn"
+            >
+                Go to Home as Guest
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
